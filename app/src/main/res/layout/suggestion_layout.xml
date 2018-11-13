@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8">
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/header_layout" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/suggestion_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:text="发表意见："
+        android:textColor="@color/black"
+        android:textSize="@dimen/large" />
+
+    <RelativeLayout
+        android:id="@+id/edit_moudle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggestion_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/suggest_edit_bg"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="编辑反馈意见..."
+            android:minLines="8"
+            android:textColorHint="#D1D1D1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit"
+            android:text="0/200"
+            android:textColor="#D1D1D1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/suggestion_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_moudle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/forget_password_btn_bg"
+        android:gravity="center"
+        android:text="发表意见"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large" />
+
+
+</RelativeLayout>

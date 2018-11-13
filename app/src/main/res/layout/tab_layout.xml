@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <cn.qijianke.kkt.ui.view.CheckedImageView
+        android:id="@+id/tab_benefit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:checked_bg="@mipmap/tab_benefit_checked"
+        app:tab_label="收益"
+        app:text_color="@color/black3"
+        app:unchecked_bg="@mipmap/tab_benefit_unchecked" />
+
+    <cn.qijianke.kkt.ui.view.CheckedImageView
+        android:id="@+id/tab_spread"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:checked_bg="@mipmap/tab_spread_checked"
+        app:tab_label="推广"
+        app:text_color="@color/black3"
+        app:unchecked_bg="@mipmap/tab_spread_unchecked" />
+
+    <cn.qijianke.kkt.ui.view.CheckedImageView
+        android:id="@+id/tab_exchange"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:checked_bg="@mipmap/tab_exchange_checked"
+        app:tab_label="兑换"
+        app:text_color="@color/black3"
+        app:unchecked_bg="@mipmap/tab_exchange_unchecked" />
+
+    <cn.qijianke.kkt.ui.view.CheckedImageView
+        android:id="@+id/tab_mine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:checked_bg="@mipmap/tab_mine_checked"
+        app:tab_label="我的"
+        app:text_color="@color/black3"
+        app:unchecked_bg="@mipmap/tab_mine_unchecked" />
+
+</LinearLayout>

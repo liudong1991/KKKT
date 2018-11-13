@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "cn.qijianke.kkt"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 10007
+        versionName "1.0.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("kkt.jks")
+            storePassword "qijianke.cn"
+            keyAlias "qijianke"
+            keyPassword "qijianke.cn"
+        }
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            minifyEnabled false
+            aaptOptions.cruncherEnabled = false
+            aaptOptions.useNewCruncher = false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    lintOptions{
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-7'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-7'
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    implementation 'me.iwf.photopicker:PhotoPicker:0.9.12@aar'
+    implementation 'com.github.bumptech.glide:glide:4.1.1'
+    implementation 'com.github.huangyanbin:SmartTable:2.2.0'
+    implementation 'id.zelory:compressor:2.1.0'
+}

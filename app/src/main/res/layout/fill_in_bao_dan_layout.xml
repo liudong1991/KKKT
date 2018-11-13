@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8">
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/header_layout" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="10dp"
+                android:text="请提交正确的券码等信息，恶意提交无关券码， 一经核实将扣款或封号"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/category_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tips"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="产品类型"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:id="@+id/tag_flow_moudle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/category_label"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <com.zhy.view.flowlayout.TagFlowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tag_flow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    app:max_select="1" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/cut_img_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag_flow_moudle"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="截图示范"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.zhy.view.flowlayout.TagFlowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cut_img_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cut_img_label"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                app:max_select="1" />
+
+            <TextView
+                android:id="@+id/upload_cut_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cut_img_model"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="上传截图"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.zhy.view.flowlayout.TagFlowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/upload_cut_moudle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upload_cut_label"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                app:max_select="1" />
+
+            <TextView
+                android:id="@+id/input_code_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upload_cut_moudle"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="兑换码"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:id="@+id/ex_code_moudle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_code_label"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/exchange_code_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ex_code_bg"
+                    android:gravity="top"
+                    android:hint="输入订单号后8位"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/small" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/memo_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ex_code_moudle"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="备注"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:id="@+id/memo_moudle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/memo_label"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/memo_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ex_code_bg"
+                    android:gravity="top"
+                    android:hint="无特殊情况请勿填写"
+                    android:minLines="3"
+                    android:padding="6dp"
+                    android:textSize="@dimen/small" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/commit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/memo_moudle"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/forget_password_btn_bg"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

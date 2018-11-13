@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8">
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/header_layout" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ad_vip_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:src="@mipmap/ad_vip_upgrade" />
+
+    <RelativeLayout
+        android:id="@+id/select_vip_moudle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_vip_upgrade"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/select_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="选择会员"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/large"
+            android:textStyle="bold" />
+
+        <cn.qijianke.kkt.ui.view.VipTabView
+            android:id="@+id/vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_vip"
+            app:select_btn_bg="@mipmap/selected"
+            app:unselect_btn_bg="@mipmap/unselected"
+            app:vip_price="888元"
+            app:vip_selected="true"
+            app:vip_type="高级会员"
+            app:vip_type_no="1" />
+
+        <cn.qijianke.kkt.ui.view.VipTabView
+            android:id="@+id/gold_vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vip"
+            app:select_btn_bg="@mipmap/selected"
+            app:unselect_btn_bg="@mipmap/unselected"
+            app:vip_price="888元"
+            app:vip_type="黄金会员"
+            app:vip_type_no="2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_pay_way_moudle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_vip_moudle"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/pay_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="选择支付方式"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/large"
+            android:textStyle="bold" />
+
+        <cn.qijianke.kkt.ui.view.PayTypeTabView
+            android:id="@+id/weixin_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pay_type_label"
+            android:visibility="gone"
+            app:pay_label="微信"
+            app:pay_logo="@mipmap/weixin"
+            app:pay_select_btn_bg="@mipmap/selected"
+            app:pay_type_no="1"
+            app:pay_unselect_btn_bg="@mipmap/unselected" />
+
+        <cn.qijianke.kkt.ui.view.PayTypeTabView
+            android:id="@+id/zhifubao_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weixin_pay"
+            app:pay_label="支付宝"
+            app:pay_logo="@mipmap/zhifubao"
+            app:pay_select_btn_bg="@mipmap/selected"
+            app:pay_selected="true"
+            app:pay_type_no="2"
+            app:pay_unselect_btn_bg="@mipmap/unselected" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goto_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/select_pay_way_moudle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/forget_password_btn_bg"
+        android:gravity="center"
+        android:text="立即支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large" />
+
+
+</RelativeLayout>

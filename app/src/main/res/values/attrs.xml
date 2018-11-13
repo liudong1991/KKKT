@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <declare-styleable name="CheckedImageView">
+        <attr name="checked_bg" format="reference" />
+        <attr name="unchecked_bg" format="reference" />
+        <attr name="tab_label" format="string" />
+        <attr name="text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="VipTabView">
+        <attr name="select_btn_bg" format="reference" />
+        <attr name="unselect_btn_bg" format="reference" />
+        <attr name="vip_type" format="string" />
+        <attr name="vip_price" format="string" />
+        <attr name="vip_type_no" format="integer" />
+        <attr name="vip_selected" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PayTypeTabView">
+        <attr name="pay_select_btn_bg" format="reference" />
+        <attr name="pay_unselect_btn_bg" format="reference" />
+        <attr name="pay_logo" format="reference" />
+        <attr name="pay_label" format="string" />
+        <attr name="pay_type_no" format="integer" />
+        <attr name="pay_selected" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewWrapper">
+        <attr name="imgWrapper_checked_bg" format="reference" />
+        <attr name="imgWrapper_unchecked_bg" format="reference" />
+        <attr name="imgWrapper_checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BenefitTabView">
+        <attr name="benefit_tab_labels" format="reference" />
+        <attr name="benefit_tab_textsize" format="dimension" />
+        <attr name="benefit_tab_selected_color" format="color" />
+        <attr name="benefit_tab_unselected_color" format="color" />
+        <attr name="benefit_tab_show_space_v" format="boolean" />
+        <attr name="benefti_tab_switch" format="boolean" />
+    </declare-styleable>
+</resources>

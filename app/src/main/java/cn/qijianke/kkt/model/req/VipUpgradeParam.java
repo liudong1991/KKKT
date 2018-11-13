@@ -1,0 +1,43 @@
+package cn.qijianke.kkt.model.req;
+
+import cn.qijianke.kkt.model.BaseModel;
+
+public class VipUpgradeParam extends BaseModel {
+
+    private String userId;
+    private String token;
+    private String rsaValue;
+    private String category;
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getRsaValue() {
+        return rsaValue;
+    }
+
+    public void setRsaValue(String rsaValue) {
+        this.rsaValue = rsaValue;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平安银行"
+            android:textColor="@color/black3"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="单号：76766"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/small" />
+
+        <LinearLayout
+            android:id="@+id/credits_moudle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bank_name"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可兑换积分："
+                android:textColor="@color/color_90"
+                android:textSize="@dimen/small" />
+
+            <TextView
+                android:id="@+id/points_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8989"
+                android:textColor="@color/black3"
+                android:textSize="@dimen/normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/money_moudle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/credits_moudle"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兑换金额："
+                android:textColor="@color/color_90"
+                android:textSize="@dimen/small" />
+
+            <TextView
+                android:id="@+id/exchange_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8989"
+                android:textColor="@color/black3"
+                android:textSize="@dimen/normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="元"
+                android:textColor="@color/color_90"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/money_moudle"
+            android:layout_alignParentRight="true"
+            android:text="2018-06-15 18:34:21"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/tiny" />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money_moudle"
+            android:layout_marginTop="16dp"
+            android:text="审核中"
+            android:textColor="#FF6C6C"
+            android:textSize="@dimen/small" />
+
+        <TextView
+            android:id="@+id/remark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/status_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/status_tv"
+            android:text="sdfsdf"
+            android:textColor="#FF6C6C"
+            android:textSize="@dimen/small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/opinion_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status_tv"
+            android:text="sdfsdf"
+            android:textColor="#FF6C6C"
+            android:textSize="@dimen/small"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+

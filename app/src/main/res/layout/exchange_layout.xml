@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="30dp"
+        android:text="兑换"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large" />
+
+    <ImageView
+        android:id="@+id/ad_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:scaleType="fitXY"
+        android:src="@mipmap/exchange_banner" />
+
+    <GridView
+        android:id="@+id/exchange_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_exchange"
+        android:background="@color/white"
+        android:numColumns="4"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:verticalSpacing="20dp" />
+
+
+</RelativeLayout>

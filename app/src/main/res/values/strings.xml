@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">卡卡联盟</string>
+    <string name="username_hint">请输入手机号码</string>
+    <string name="login_by_mobilephone">手机号登录</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="password">密码</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="mobilephone">手机号</string>
+    <string name="graphic_certi_code">图形验证码</string>
+    <string name="graphic_certi_code_hint">请输入图形验证码</string>
+    <string name="sms_certi_code">短信验证码</string>
+    <string name="set_password">设置密码</string>
+    <string name="get_sms_certi_code">获取验证码</string>
+    <string name="input_sms_certi_code_hint">请输入短信验证码</string>
+    <string name="set_password_hint">请设置密码</string>
+    <string name="inviter_mobilephone">推荐人手机号</string>
+    <string name="input_mobilephone_hint">请输入手机号</string>
+    <string name="company_profile">云南卡卡网络科技有限公司，创办于2016年3月，是一家专业为第三方支付公司、互联网平台、金融组织机构等提供专业金融服务公司；\n主要开展机具销售、办理等业务。已逐步形成了以机具为核心，线上线下全覆盖模式，满足各行综合性需求的多渠道、多行业机具服务体系。以我们专业的服务团队和第三方支付单位提供基础的高效的数据处理中心；\n专业为商户和持卡人提供专业、稳定、高效的机具服务，有最具实力的技术团队和最强大的第三方支持。公司总运营服务点设立在云南省昆明市官渡区环城南路民生银行分行大楼（春天印象）12楼B1314室；\n本公司合伙伙伴遍布全国多个省份，并且公司在地州也设立了多个分公司及合作伙伴；\n公司以诚信的经营理念、快速高效的管理模式、积极主动的服务态度，极力打造出为客户提供最安全、最便捷、最贴心的支付售后服务平台。</string>
+    <string-array name="benefit_tab_labels">
+        <item>个人收益</item>
+        <item>团队收益</item>
+        <item>推广收益</item>
+        <item>兑换收益</item>
+    </string-array>
+    <string-array name="query_deal_labels">
+        <item>个人</item>
+        <item>团队</item>
+    </string-array>
+    <string-array name="query_exchange_labels">
+        <item>全部</item>
+        <item>审核通过</item>
+        <item>审核中</item>
+        <item>审核失败</item>
+    </string-array>
+    <string-array name="query_pos_labels">
+        <item>型号</item>
+        <item>商户人</item>
+        <item>手机号码</item>
+        <item>状态</item>
+    </string-array>
+    <string-array name="group_member_labels">
+        <item>成员</item>
+        <item>注册时间</item>
+        <item>电话</item>
+    </string-array>
+    <string-array name="deal_detail_labels">
+        <item>机身号</item>
+        <item>时间</item>
+        <item>金额</item>
+    </string-array>
+    <string-array name="deposit_record_labels">
+        <item>时间</item>
+        <item>金额</item>
+        <item>状态</item>
+    </string-array>
+
+</resources>
